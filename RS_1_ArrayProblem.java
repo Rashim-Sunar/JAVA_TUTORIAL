@@ -1,6 +1,4 @@
-package javaGit;
-
-public class rs_1_ArrayProblem {
+public class RS_1_ArrayProblem {
     public static void main(String[] args) {
         // 1 --> SUM OF ELEMENTS OF AN ARRAY.....
         // float [] arr = {10.1f, 20.2f, 30.3f, 40.4f, 50.5f};
