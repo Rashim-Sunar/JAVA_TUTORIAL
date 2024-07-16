@@ -14,6 +14,19 @@ class Employee{
     }
 }
 
+
+class Square{
+    int side;
+    public int area(){
+        return side*side;
+    }
+
+    public int perimeter(){
+        return 4*side;
+    }
+
+}
+
 public class RS_6_CUSTOM_CLASS {
     public static void main(String[] args) {
         Employee aakash = new Employee(); //Instantiating new Employee object. 
@@ -25,11 +38,16 @@ public class RS_6_CUSTOM_CLASS {
         bivek.name = "Bivek";
         bivek.id = 101;
         bivek.salary = 200000;
+        //Calling methods 
         aakash.myDetails();
         System.out.println(aakash.getSalary());
         bivek.myDetails();
         System.out.println(bivek.getSalary());
 
 
+        Square sq = new Square();
+        sq.side = 4;
+        System.out.println("Area = "+ sq.area());
+        System.out.println("Perimeter = "+sq.perimeter());
     }
 }
