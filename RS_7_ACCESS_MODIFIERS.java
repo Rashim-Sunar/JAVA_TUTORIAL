@@ -7,14 +7,16 @@ class Employee7{
     //getters and setters access.. 
     public void setName(String n){
         this.name = n;
+        //name = n; This will also work...
     }
 
     public void setId(int ID){
-        this.id = ID;
+        this.id = ID; 
     }
 
     public String getName(){
         return this.name;
+        // return name;  Thi wil also run...
     }
 
     public int getId(){
