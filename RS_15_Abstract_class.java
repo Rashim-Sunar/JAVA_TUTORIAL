@@ -38,3 +38,6 @@ public class RS_15_Abstract_class {
        p.sleep(); 
     }
 }
+
+//Note: We can create reference of an abstract class
+// i.e. Animal p = new Pig();  --> Creating reference of parent class
