@@ -20,7 +20,8 @@ If you overload a static method in Java, it is the example of compile time polym
 
 
  //Lets take an example for runtime polymorphism with multi-level inheritance.. 
- class Animal{
+
+ class Animal1{
     public void eat(){
         System.out.println("Animal is eating");
     }
@@ -30,7 +31,7 @@ If you overload a static method in Java, it is the example of compile time polym
     }
  }
 
- class Dog extends Animal{
+ class Dog extends Animal1{
     @Override
     public void eat(){
         System.out.println("Dog is running from derived class");
@@ -43,7 +44,7 @@ If you overload a static method in Java, it is the example of compile time polym
 
 public class RS_13_RUNTIME_POLYMRPHISM {
     public static void main(String[] args) {
-        Animal d1 = new Dog(); // UPCASTING --> If the reference variable of Parent class refers to the object of Child class, it is known as upcasting
+        Animal1 d1 = new Dog(); // UPCASTING --> If the reference variable of Parent class refers to the object of Child class, it is known as upcasting
         d1.eat();  
         // Above, We are calling the eat() method by the reference variable of Parent class. Since it refers to the subclass object and subclass method overrides the Parent class method, the subclass method is invoked at runtime.
         // d1.bark();  This is not valid. Throws an error
