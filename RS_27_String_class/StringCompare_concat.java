@@ -49,5 +49,25 @@ public class StringCompare_concat {
         //String concatenation using String.format() method
         String s14 = String.format("%s %s", s1, s2);
         System.out.println(s14); //Aakash Aakash
+
+        // .toUpperCase() method.. 
+        System.out.println(s1.toUpperCase()); //AAKASH
+        System.out.println(s1); //Aakash
+
+        // .trim() --> eleminates white spaces from start and beginning
+        
+        System.out.println(s1.startsWith("Aa")); //true
+
+        System.out.println(s1.charAt(2)); // k
+         
+        // String.valueOf() --> converts given type like int, long, double, float, array into string 
+        char[] ch = {'a','b','c','d','e'};
+        String str = String.valueOf(ch);
+        System.out.println(str);
+
+        // .replace() method --> replaces all occurance of the first sequence of characters with the second sequence of characters. 
+        String str1 = "Java is a Programming Language";
+        String replaceString = str1.replace("Java", "Python");
+        System.out.println(replaceString);
     }
 }
