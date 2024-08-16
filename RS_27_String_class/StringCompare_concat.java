@@ -68,6 +68,6 @@ public class StringCompare_concat {
         // .replace() method --> replaces all occurance of the first sequence of characters with the second sequence of characters. 
         String str1 = "Java is a Programming Language";
         String replaceString = str1.replace("Java", "Python");
-        System.out.println(replaceString);
+        System.out.println(replaceString); 
     }
 }
