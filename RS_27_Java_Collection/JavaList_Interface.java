@@ -1,3 +1,16 @@
+
+/*
+ List in Java provides the facility to maintain the ordered collection. It contains the index-based methods to insert, update, delete and search the elements. 
+ It can have the duplicate elements also. We can also store the null elements in the list.
+ he List interface is found in the java.util package and inherits the Collection interface.
+
+  The implementation classes of List interface are ArrayList, LinkedList, Stack and Vector. The ArrayList and LinkedList are widely used in Java programming. 
+  The Vector class is deprecated since Java 5.
+
+Java List vs ArrayList?
+List is an interface whereas ArrayList is the implementation class of List.
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
@@ -58,14 +71,16 @@ public class JavaList_Interface {
 
         // ListIterator iterface --> used to iterate through each list element
        ListIterator<String> itr = list2.listIterator();
+       //traverse list in forward direction... 
        while(itr.hasNext()){
         System.out.print(itr.next()+" "); // C++ Java PHP setter1
        }
 
        System.out.println();
 
+       // traverse list in backward direction...
        while(itr.hasPrevious()){
-        System.out.print(itr.previous()+" ");
+        System.out.print(itr.previous()+" "); // setter1 PHP Java C++
        }
 
     }
